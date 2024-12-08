@@ -9,6 +9,7 @@ The project leverages OpenAI's fine-tuning capabilities and in-context learning 
 
 ## Key Achievements
 **Automated Game Summaries**: The model successfully generates professional-grade game summaries, highlighting key plays, scoring sequences, and standout performances with high accuracy.
+
 **Fantasy Football Insights**: The assistant provides accurate, data-driven player recommendations, helping users make informed decisions based on recent trends, injuries, and game performances.
 
 This project demonstrates the potential of AI in sports analytics, bridging the gap between raw data and actionable insights. Whether you're a sports journalist, a fantasy football enthusiast, or an AI researcher, this repository offers valuable tools and methodologies to explore the intersection of AI and sports.
