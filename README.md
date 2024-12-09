@@ -57,6 +57,7 @@ To address this, I fine-tuned the model with data on active players, 2023 team a
   ```
 
 **Phase 2: Fine-Tuning GPT-4 on Numeric Reasoning and Statistical Aggregation**
+
 Trained the model on 400 examples of stat aggregation, focusing on summing drive-level stats into game-level totals.
 While the model performed well on a test set, a hybrid approach was ultimately used and explicit numeric values were included in the inputs to ensure high accuracy, given the critical importance of numerical precision for this task.
 
@@ -77,6 +78,7 @@ While the model performed well on a test set, a hybrid approach was ultimately u
 ```
 
 **Phase 3: Fine-Tuning GPT-4 to Generate Game Summaries**
+
 Preprocessed game log data into a format the model could understand:
   - Extracted relevant details and stats from raw logs.
   - Organized data by grouping plays into drives and aggregating team/player stats.
@@ -119,6 +121,7 @@ Using the pre-processed game information blocks, Fine-tuned GPT-4 to generate co
 ```
 
 **Phase 4: Generating Game Summaries on Unseen Data**
+
 Used the fine-tuned model to generate game summaries for unseen data.
 Summaries were numerically accurate, highlighted key turning points, and were written in a readable and engaging manner.
 
@@ -134,6 +137,7 @@ Summaries were numerically accurate, highlighted key turning points, and were wr
 ```
 
 **Phase 5: In-Context Learning & Fantasy Recommendations**
+
 Built a knowledge base by generating summaries for every game played so far this season and stored these summaries for efficient querying.
 Developed a system for fantasy football recommendations leveraging the knowledge base to ask the model specific questions about fantasy football scenarios.
 The model delivered actionable insights tailored to user queries.
@@ -178,6 +182,7 @@ Response: "To give you the best chance of winning, you should draft Joe Burrow. 
 ```
 
 ## Technical Details and Implementation
+
 ### Tools and Model
 The fine-tuned model and above processes use OpenAI's GPT-4o Mini. GPT-4o Mini was chosen for several reasons, including the following:
    - GPT-4 Mini is cost-efficient and performs nearly as well as full GPT-4.
@@ -194,6 +199,7 @@ Libraries:
 
 ## Critical Analysis
 ### Additional Considerations and Next Steps
+
 **Planned Enhancements**
 In the next iteration of this project, I aim to include:
    - **Special Plays**: Enhanced recognition and contextual understanding of unique plays, such as fake punts and other trick plays.
