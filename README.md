@@ -177,7 +177,68 @@ Question: Assume every QB is available. Who should I draft to my fantasy team to
 Response: "To give you the best chance of winning, you should draft Joe Burrow. He has been on fire lately, throwing for 421 yards and 4 touchdowns in a win over the Ravens. He also threw for 242 yards and 5 touchdowns in a win over the Raiders. He has a great matchup against the Commanders in Week 14."
 ```
 
+## Technical Details and Implementation
+### Tools and Model
+The fine-tuned model and above processes use OpenAI's GPT-4o Mini. GPT-4o Mini was chosen for several reasons, including the following:
+   - GPT-4 Mini is cost-efficient and performs nearly as well as full GPT-4.
+   - It supports multiple API calls and can handle large contexts (up to 128k tokens), ideal for processing detailed game logs and historical data.
+   - GPT-4.0 mini is easily accessible via the OpenAI Python package.
+   - This model outperforms other small models like Gemini and Claude Mini by ~5 percentage points on reasoning tasks, with strong proficiency in mathematical reasoning and coding.
 
+### Key Technologies
+Languages: Python, R
+Libraries:
+   - nflfastr for data collection.
+   - openai, transformers for fine-tuning the model.
+   - pandas, numpy, re, json, for data processing.
+
+## Critical Analysis
+### Additional Considerations and Next Steps
+**Planned Enhancements**
+In the next iteration of this project, I aim to include:
+   - **Special Plays**: Enhanced recognition and contextual understanding of unique plays, such as fake punts and other trick plays.
+   - **Additional & Partial-Game Aggregated Statistics**: Incorporating halftime and quarterly summaries for better mid-game insights and trends.
+   - **Defensive Player Stats**: Expanding data inputs to include detailed defensive statistics, such as interceptions, tackles, and sacks for individual players.
+
+**Improved Evaluation Metrics**
+Currently, validation and evaluation are primarily subjective, relying on domain knowledge and manual review. In the future, I plan to adopt more formal evaluation metrics, such as:
+   - ROUGE or BLEU Scores: To quantitatively measure the accuracy and coherence of generated summaries.
+   - Other Metrics: Exploring equivalent metrics tailored to sports summaries to assess numeric precision and narrative quality.
+     
+**Operationalizing the Workflow**
+The ultimate goal is to create a seamless, automated pipeline:
+
+1. After each NFL week, game logs will be collected and pre-processed.
+2. The model will generate summaries for new games and append them to the knowledge base.
+3. This updated knowledge base will be used to deliver fantasy football recommendations and insights, ensuring up-to-date and actionable information for users.
+
+### Project Impact and Insights
+This project introduces two innovative applications of AI in sports and analytics, offering transformative potential in both sports journalism and fantasy football management.
+
+**1. Automated Sports Journalism**
+
+By generating AI-written game summaries, this project reduces the reliance on human resources for game coverage.
+Traditional workflows — watching games, writing summaries, editing, and publishing — are time-intensive. This model streamlines the process, enabling the creation of timely, accurate, and engaging summaries with minimal manual intervention.
+This approach can benefit media outlets by scaling coverage, reducing costs, and delivering rapid post-game content, especially for less-covered games or leagues.
+
+**2. Automated, Data-Informed Fantasy Recommendations**
+
+The model’s ability to combine raw statistics with contextual game knowledge introduces a new dimension to fantasy football insights.
+This is particularly valuable for:
+   - Newcomers: Making fantasy football more accessible by simplifying complex data.
+   - Non-analytical participants: Providing intuitive, context-aware recommendations for those less comfortable with interpreting raw statistics.
+   - Experienced players: Offering fresh perspectives or validating their strategies with data-backed suggestions.
+
+By continuously updating recommendations with the latest game information, the system ensures that advice remains current and relevant.
+
+**Broader Implications**
+**Empowering Decision-Making**: Whether for sports enthusiasts, analysts, or journalists, the project exemplifies how AI can enhance decision-making and creativity through rapid data synthesis and narrative generation.
+
+**Expanding Accessibility**: By lowering the barriers to actionable insights, this project makes both sports content and fantasy advice more inclusive and engaging for diverse audiences.
+
+**Driving Innovation in Sports AI:** The integration of advanced AI capabilities—fine-tuned for reasoning, numerical precision, and contextual understanding—demonstrates the potential for AI to redefine how we interact with and understand sports data.
+
+ 
 
 
 
