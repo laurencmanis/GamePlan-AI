@@ -126,15 +126,13 @@ Used the fine-tuned model to generate game summaries for unseen data.
 Summaries were numerically accurate, highlighted key turning points, and were written in a readable and engaging manner.
 
 **Sample Model-Generated Game Summary**
-```
-    Headline: Jared Goff throws for 263 yards and 3 TDs, Lions beat Packers 34-31 in wild finish.
-    
-    Summary: The Lions led 31-17 in the fourth quarter, but the Packers rallied to tie it with 2 TDs in a span of 3:09. Green Bay took a 31-31 tie on Jacobs’ 4-yard TD run with 11:56 left. The Lions then drove to the Green Bay 14, but Goff was sacked on third down and settled for a field goal. The Packers got the ball back with 4:10 left and drove to the Detroit 6, but Love’s TD pass to Jacobs was nullified by an offensive pass interference call on Christian Watson. Green Bay settled for a 32-yard field goal by Brandon McManus with 2:02 left. The Lions got the ball back and drove to the Green Bay 14, where they faced a fourth-and-1 with 28 seconds left. Detroit opted to kick the field goal, and Jake Bates made a 35-yarder to win it.
-    
-    Notable Performances: Goff completed 30 of 38 passes for 263 yards and three touchdowns. Montgomery ran for 50 yards and a score and caught five passes for 33 yards. Jahmyr Gibbs ran for 41 yards and a touchdown and caught six passes for 30 yards. Christian Watson had four catches for 114 yards for the Packers. Love finished 12 of 20 for 199 yards with a touchdown and an interception.
-    
-    Injuries: Lions: CB Brian Branch left in the third quarter. Packers: CB Darnell Savage left in the second quarter.
-```
+   > ***Headline**: Jared Goff throws for 263 yards and 3 TDs, Lions beat Packers 34-31 in wild finish.*
+>
+   > ***Summary**: The Lions led 31-17 in the fourth quarter, but the Packers rallied to tie it with 2 TDs in a span of 3:09. Green Bay took a 31-31 tie on Jacobs’ 4-yard TD run with 11:56 left. The Lions then drove to the Green Bay 14, but Goff was sacked on third down and settled for a field goal. The Packers got the ball back with 4:10 left and drove to the Detroit 6, but Love’s TD pass to Jacobs was nullified by an offensive pass interference call on Christian Watson. Green Bay settled for a 32-yard field goal by Brandon McManus with 2:02 left. The Lions got the ball back and drove to the Green Bay 14, where they faced a fourth-and-1 with 28 seconds left. Detroit opted to kick the field goal, and Jake Bates made a 35-yarder to win it.*
+> 
+   > ***Notable Performances**: Goff completed 30 of 38 passes for 263 yards and three touchdowns. Montgomery ran for 50 yards and a score and caught five passes for 33 yards. Jahmyr Gibbs ran for 41 yards and a touchdown and caught six passes for 30 yards. Christian Watson had four catches for 114 yards for the Packers. Love finished 12 of 20 for 199 yards with a touchdown and an interception.*
+> 
+   > ***Injuries**: Lions: CB Brian Branch left in the third quarter. Packers: CB Darnell Savage left in the second quarter.*
 
 **Phase 5: In-Context Learning & Fantasy Recommendations**
 
