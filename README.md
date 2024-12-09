@@ -190,6 +190,25 @@ The fine-tuned model and above processes use OpenAI's GPT-4o Mini. GPT-4o Mini w
    - GPT-4.0 mini is easily accessible via the OpenAI Python package.
    - This model outperforms other small models like Gemini and Claude Mini by ~5 percentage points on reasoning tasks, with strong proficiency in mathematical reasoning and coding.
 
+**Sample Response-Generation Code**
+```
+   # Generate a response
+       response = openai.ChatCompletion.create(
+           model=fine_tuned_model,
+           messages=[
+               {"role": "system", "content": "You are a professional sports journalist. Write concise, factual, and engaging football game summaries based on the drive summaries, play logs, and numeric summaries provided."},
+               {"role": "user", "content": prompt},
+           ],
+           max_tokens=1000,
+           temperature=0.05,
+       )
+
+```
+**Parameters**
+
+- Temperature was generally set below 1 (at 0.05) to ensure responses are deterministic and fact-based, rather than creative.
+- Max_tokens for summaries was set to 1,000, to allow the model to generate summaries that are several paragraphs, but not too large to process.
+
 ### Key Technologies
 Languages: Python, R
 Libraries:
